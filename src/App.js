@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Header from './Header';
+import BlogPost from './BlogPost';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid>
+      <Row>
+        <Header />
+      </Row>
+      <Row>
+        <Col md={3}>
+          <BlogPost title="test" description="lorem ipsum" />
+        </Col>
+        <Col md={3}>
+          <BlogPost title="apple" description="lorem ipsum" />
+        </Col>
+        <Col md={3}>
+          <BlogPost title="banana" description="lorem ipsum" />
+        </Col>
+        <Col md={3}>
+          <BlogPost title="float" description="lorem ipsum" />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
