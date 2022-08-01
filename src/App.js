@@ -17,11 +17,13 @@ function App() {
         <Col md={3}>
           <BlogPost title="apple" description="lorem ipsum" />
         </Col>
+      </Row>
+      <Row>
         <Col md={3}>
-          <BlogPost title="banana" description="lorem ipsum" />
+          <BlogPost title="test" description="lorem ipsum" />
         </Col>
         <Col md={3}>
-          <BlogPost title="float" description="lorem ipsum" />
+          <BlogPost title="apple" description="lorem ipsum" />
         </Col>
       </Row>
     </Container>
