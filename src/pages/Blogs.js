@@ -4,7 +4,16 @@ const Blogs = () => {
   return (
     <>
       <h1 className="my-4">Blogs</h1>
-      <BlogCard />
+      <BlogCard
+        title="This is a title"
+        content="This is the content"
+        author="Author's Name"
+      />
+      <BlogCard
+        title="Another title"
+        content="another content"
+        author="Another author"
+      />
     </>
   );
 };

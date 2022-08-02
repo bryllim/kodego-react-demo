@@ -1,19 +1,13 @@
 import Card from 'react-bootstrap/Card'
 
-const BlogCard = () => {
+const BlogCard = (props) => {
     return (
         <Card className="mb-4">
-            <Card.Header>Quote</Card.Header>
+            <Card.Header>{props.title}</Card.Header>
             <Card.Body>
                 <blockquote className="blockquote mb-0">
-                    <p>
-                        {' '}
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                        posuere erat a ante.{' '}
-                    </p>
-                    <footer className="blockquote-footer">
-                        Someone famous in <cite title="Source Title">Source Title</cite>
-                    </footer>
+                    <p>{props.content}</p>
+                    <footer className="blockquote-footer">{props.author}</footer>
                 </blockquote>
             </Card.Body>
         </Card>
