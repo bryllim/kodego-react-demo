@@ -7,7 +7,7 @@ const Blogs = () => {
       <BlogCard
         title="This is a title"
         content="This is the content"
-        author="Author's Name"
+        author="Bryl Lim"
       />
       <BlogCard
         title="Another title"
