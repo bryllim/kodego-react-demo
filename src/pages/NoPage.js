@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const NoPage = () => {
 
@@ -8,16 +8,28 @@ const NoPage = () => {
     rgb: "rgb(255, 0, 0)",
   });
 
+  const [count, setCount] = useState(0);
+
+  const fruits = ["apple", "banana", "cherry"];
+  
+  useEffect(() => {
+    setTimeout(() => {
+      setCount((count) => (count < 2 ? count + 1 : 0));
+    }, 1000);
+  });
+
   const updateColor = (newColor) => {
     setColor(previousState => {
       return {
         ...previousState, color: newColor
-      }});
+      }
+    });
   }
 
   return (
     <div className="text-center jumbotron mt-5">
-      <h1>My favorite color is <span style={{backgroundColor: color.color}} >{color.color}</span> !</h1>
+      <h2 className="mb-5">Timer: {fruits[count]}</h2>
+      <h1>My favorite color is <span style={{ backgroundColor: color.color }} >{color.color}</span> !</h1>
       <button
         type="button"
         onClick={() => updateColor("blue")}
