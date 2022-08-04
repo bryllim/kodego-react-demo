@@ -10,6 +10,13 @@ const NoPage = () => {
 
   const [count, setCount] = useState(0);
 
+  const [students, setStudents] = useState([
+    { name: "John", age: 20 },
+    { name: "Mark", age: 43 },
+    { name: "Matthew", age: 10 },
+    { name: "Luke", age: 60 },
+  ]);
+
   const fruits = ["apple", "banana", "cherry"];
   
   useEffect(() => {
@@ -28,6 +35,7 @@ const NoPage = () => {
 
   return (
     <div className="text-center jumbotron mt-5">
+      <h1 className="m-5">{students[0].name} and the age is {students[0].age}</h1>
       <h2 className="mb-5">Timer: {fruits[count]}</h2>
       <h1>My favorite color is <span style={{ backgroundColor: color.color }} >{color.color}</span> !</h1>
       <button
