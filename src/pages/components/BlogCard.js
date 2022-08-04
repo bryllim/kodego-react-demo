@@ -1,4 +1,5 @@
 import Card from 'react-bootstrap/Card'
+import parse from "html-react-parser";
 
 const BlogCard = (props) => {
     return (
@@ -6,7 +7,7 @@ const BlogCard = (props) => {
             <Card.Header>{props.title}</Card.Header>
             <Card.Body>
                 <blockquote className="blockquote mb-0">
-                    <p>{props.content}</p>
+                    <div>{parse(props.content)}</div>
                     <footer className="blockquote-footer">{props.author}</footer>
                 </blockquote>
             </Card.Body>

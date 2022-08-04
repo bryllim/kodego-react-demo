@@ -18,7 +18,7 @@ const NoPage = () => {
   ]);
 
   const fruits = ["apple", "banana", "cherry"];
-  
+
   useEffect(() => {
     setTimeout(() => {
       setCount((count) => (count < 2 ? count + 1 : 0));
@@ -35,7 +35,12 @@ const NoPage = () => {
 
   return (
     <div className="text-center jumbotron mt-5">
-      <h1 className="m-5">{students[0].name} and the age is {students[0].age}</h1>
+      {students.map(item =>
+        <div>
+          <h1>{item.name}</h1>
+          <p>{item.age}</p>
+        </div>
+      )}
       <h2 className="mb-5">Timer: {fruits[count]}</h2>
       <h1>My favorite color is <span style={{ backgroundColor: color.color }} >{color.color}</span> !</h1>
       <button
