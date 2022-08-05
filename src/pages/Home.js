@@ -1,4 +1,5 @@
 const Home = () => {
+
   return (
     <div className="text-center">
       <h1 className="mt-5">Welcome to a Blog Website</h1>
