@@ -19,8 +19,13 @@ const Blogs = () => {
 
   const [blogs, setBlogs] = useState([]);
 
+  const toggleLoading = () => {
+    setIsLoading(!isLoading);
+  }
+
   return (
     <>
+      <button className="btn btn-primary my-5" onClick={toggleLoading}>Toggle Blogs</button>
       {isLoading ? (
         <h1 className="text-center my-5">Loading blogs...</h1>
       ) : (
