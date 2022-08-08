@@ -23,23 +23,21 @@ const Blogs = () => {
     setIsLoading(!isLoading);
   }
 
+  if (isLoading) {
+    return(
+      <h1 className="text-center my-5">Loading blogs...</h1>
+    )
+  }
   return (
     <>
-      <button className="btn btn-primary my-5" onClick={toggleLoading}>Toggle Blogs</button>
-      {isLoading ? (
-        <h1 className="text-center my-5">Loading blogs...</h1>
-      ) : (
-        <>
-          <h1 className="my-4">Blogs</h1>
-          {blogs.map(blog => (
-            <BlogCard
-              title={blog.title}
-              content={blog.content}
-              author={blog.author}
-            />
-          ))}
-        </>
-      )}
+      <h1 className="my-4">Blogs</h1>
+      {blogs.map(blog => (
+        <BlogCard
+          title={blog.title}
+          content={blog.content}
+          author={blog.author}
+        />
+      ))}
     </>
   );
 };
