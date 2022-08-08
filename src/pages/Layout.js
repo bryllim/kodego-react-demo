@@ -14,12 +14,16 @@ function Layout() {
             <Nav className="me-auto">
               <Nav.Link href="/blogs">Blogs</Nav.Link>
               <Nav.Link href="/contact">Contact</Nav.Link>
+              <Nav.Link href="/demo">Demo Page</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       <Container>
         <Outlet />
+        <footer>
+          <p className="text-center my-5">© 2021 Blog Website | For KodeGo Bootcamp purposes</p>
+        </footer>
       </Container>
     </>
   );

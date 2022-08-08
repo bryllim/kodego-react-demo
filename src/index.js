@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
+import Demo from "./pages/Demo";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="demo" element={<Demo />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

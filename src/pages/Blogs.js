@@ -3,7 +3,7 @@ import BlogCard from "./components/BlogCard";
 
 const Blogs = () => {
 
-  const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@robertroybritt";
+  const mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@bryllim";
 
   useEffect(() => {
     fetch(mediumURL)
