@@ -27,6 +27,11 @@ const Demo = () => {
                 icon: "🍌",
                 description: "A banana a day keeps the doctor away."
             },
+            {
+                name: "Papaya",
+                icon: "🍌",
+                description: "A Papaya a day keeps the doctor away."
+            },
         ]
     );
 
