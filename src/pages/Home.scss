@@ -1,0 +1,18 @@
+@import "Variables";
+
+
+.textRed {
+    color: $primaryColor;
+}
+
+.boldFont {
+    font-weight: $fontSize;
+}
+
+.boldFont:hover{
+    font-weight: 100;
+}
+
+.centerLine{
+    @include lineCenter;
+}

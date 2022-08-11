@@ -1,0 +1,10 @@
+$primaryColor: pink;
+$secondaryColor: blue;
+$accentColor: #0074d9;
+$fontSize: 900;
+
+$appTitle: str-length("Capstone Project");
+
+@mixin lineCenter {
+    text-align: center;
+}
