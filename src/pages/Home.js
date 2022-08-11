@@ -23,6 +23,11 @@ const Home = () => {
       <p className="boldFont">
         This is a simple blog website that I created to learn React.js
       </p>
+      <div className="my-5">
+      <span className="alert alert-secondary">{currentDate.toLocaleTimeString('en-SG', options)}</span>
+      </div>
+      <h1 className="textRed">Welcome to a Blog Website</h1>
+      <p className="boldFont">This is a simple blog website that I created to learn React.js</p>
       <img src="https://kodego.ph/_nuxt/img/join_asset.9a7edbb.png"></img>
     </div>
   );
